@@ -1,0 +1,1 @@
+Projeto feito em parceria com o Ludus Lab, para a capacitação em Desenvolvimento de Jogos na Unity.
