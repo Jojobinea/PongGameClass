@@ -2736,12 +2736,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0240dfdc844d6244811b3f1d866dd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScoreText: {fileID: 0}
-  gameOverPanel: {fileID: 0}
-  winnerPlayer: {fileID: 0}
-  audioSource: {fileID: 0}
+  playerScoreText: {fileID: 1541490175}
+  gameOverPanel: {fileID: 144009455}
+  winnerPlayer: {fileID: 1827750063}
+  audioSource: {fileID: 900381800}
   gameOverSound: {fileID: 0}
-  maxPoints: 0
+  maxPoints: 5
 --- !u!114 &900381799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2754,7 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0470c8e8bb8dd74ba835faf472cf20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 900381800}
   buttonSound: {fileID: 0}
 --- !u!82 &900381800
 AudioSource:
@@ -4798,7 +4798,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4b18b0b092eb18a49a2c0878be4a32f6, type: 3}
-  m_Color: {r: 0.8673414, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9457249, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5568,7 +5568,11 @@ MonoBehaviour:
   _ballAudioSource: {fileID: 1753149686}
   speedForce: 9.5
   secondsDelay: 0.5
-  startDirection: []
+  startDirection:
+  - {x: 1, y: 1}
+  - {x: 1, y: -1}
+  - {x: -1, y: -1}
+  - {x: -1, y: 1}
   _collisionColClip: {fileID: 8300000, guid: 68e9e962d23a56443b29f0deff3ff132, type: 3}
   _scoreClip: {fileID: 8300000, guid: c59290b73e6f6cf43b142285215e01da, type: 3}
 --- !u!199 &1753149684
@@ -11532,7 +11536,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4b18b0b092eb18a49a2c0878be4a32f6, type: 3}
-  m_Color: {r: 0.949842, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9457249, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
