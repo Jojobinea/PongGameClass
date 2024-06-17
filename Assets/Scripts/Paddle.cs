@@ -7,6 +7,7 @@ public class Paddle : MonoBehaviour
     // Variables
     public float speed;
     public bool isPlayerOne;
+    public ParticleSystem _particleSystem;
     private bool _isPressingUp;
     private bool _isPressingDown;
     private SpriteRenderer _spriteRenderer;
@@ -41,5 +42,11 @@ public class Paddle : MonoBehaviour
             transform.Translate(Vector2.down * speed * Time.deltaTime);
             _spriteRenderer.flipY = true;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Ball"))
+            _particleSystem.Play();
     }
 }
